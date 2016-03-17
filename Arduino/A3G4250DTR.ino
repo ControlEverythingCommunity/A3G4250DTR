@@ -18,7 +18,7 @@ void setup()
 
 	// Start I2C Transmission
 	Wire.beginTransmission(Addr);
-  // Select control register 1
+  	// Select control register 1
 	Wire.write(0x20 );
 	// Send data to enable X, Y, Z-Axis
 	Wire.write(0x0F);
@@ -52,7 +52,7 @@ void loop()
 		// X-Axis lsb, X-Axis msb, Y-Axis lsb, Y-Axis msb, Z-Axis lsb, Z-Axis msb
 		Wire.requestFrom(Addr, 1);
 
-    // Read 1 byte of data
+    		// Read 1 byte of data
 		if(Wire.available() == 1)
 		{
 			data[i] = Wire.read();
