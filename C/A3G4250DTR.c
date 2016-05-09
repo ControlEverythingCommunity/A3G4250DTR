@@ -93,7 +93,7 @@ void main()
 		yGyro -= 65536;
 	}
 
-	int zGyro = (data_4 * 256 + data_5);
+	int zGyro = (data_5 * 256 + data_4);
 	if(zGyro > 32767)
 	{
 		zGyro -= 65536;
