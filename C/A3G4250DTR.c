@@ -35,7 +35,7 @@ void main()
 	config[0] = 0x23;
 	config[1] = 0x00;
 	write(file, config, 2);
-	sleep(0.5);
+	sleep(1);
 	
 	// Read 6 bytes of data
 	// lsb first
